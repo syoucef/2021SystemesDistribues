@@ -1,6 +1,6 @@
 # **Systèmes Distribués**
 
-# Travail à faire le mercredi 22 septembre 
+# Travail à faire le mercredi 22 septembre
 
 1. Finir les tutoriels sur Maven que vous trouverez sur Arche
 2. Prise en main de markdown (vos rapports doivent être rédigés avec Markdown)
