@@ -1,6 +1,3 @@
-# **Systèmes Distribués**
-
-
 
 # Travail à faire le mercredi 29 septembre
 
