@@ -31,7 +31,7 @@ Pour que Maven génère un war au lieu d'un jar, on ajoute les deux plugings sui
 ```
 
 
-Il existe deux approches pour développer un service web SOAP : (i) l'approche Bottomp-up et (ii) l'approche top-down. La première approche consite à définir d'abord les méthodes du service en question et puis générer son fichier de description wsdl (wWb Service Description Language). La deuxième approche consiste à définir d'abord  le contrat du service. 
+Il existe deux approches pour développer un service web SOAP : (i) l'approche Bottomp-up et (ii) l'approche top-down. La première approche consite à définir d'abord les méthodes (opérations) du service en question et puis générer son fichier de description wsdl (wWeb Service Description Language). C'est la méthode la plus intuitive. La génération du fichier de description du service se fait l'aide de l'utilitaire ``wsgen``.  La deuxième approche consiste à définir d'abord  le contrat du service. 
 
 
 # Travail à faire le mercredi 22 septembre 
