@@ -28,8 +28,25 @@ Pour que Maven génère un war au lieu d'un jar, on ajoute les deux plugings sui
 ```
 
 
-Il existe deux approches pour développer un service web SOAP : (i) l'approche Bottomp-up et (ii) l'approche top-down. La première approche consite à définir d'abord les méthodes (opérations) du service en question et puis générer son fichier de description wsdl (wWeb Service Description Language). C'est la méthode la plus intuitive. La génération du fichier de description du service se fait l'aide de l'utilitaire ``wsgen``.  La deuxième approche consiste à définir d'abord  le contrat du service. 
+Il existe deux approches pour développer un service web SOAP : (i) l'approche Bottomp-up et (ii) l'approche top-down. La première approche consiste à définir d'abord les méthodes (opérations) du service en question et puis générer son fichier de description wsdl (wWeb Service Description Language). C'est la méthode la plus intuitive. La génération du fichier de description du service se fait l'aide de l'utilitaire ``wsgen``.  La deuxième approche consiste à définir d'abord  le contrat du service. 
 
+
+Un exemple d'un service web (``testsoap``), exposant une seule méthode appelée ``affichageBonjour``, prenant en paramètre une chaîne de caractère, est donné par le code suivant. 
+
+
+```java    
+package com.test;
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+@WebService(serviceName = "testsoap", targetNamespace = "http://www.polytech.fr")
+public class MonService {
+
+    @WebMethod(operationName = "affichageBonjour")
+    public String afficherBonjour(String nom){
+        return "Bonjour " + nom;
+    }
+}
+```
 
 # Travail à faire le mercredi 22 septembre 
 
