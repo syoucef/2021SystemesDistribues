@@ -51,9 +51,9 @@ Commençons d'abord par générer un projet web, en utilisant Maven. Choisissez 
 
 
 
-![figures/fig1.PNG](figures/fig1.PNG)
+![figures/fig1.PNG](figures/fig1.png)
 
-![figures/fig2.PNG](figures/fig2.PNG)
+![figures/fig2.PNG](figures/fig2.png)
 
 
 
