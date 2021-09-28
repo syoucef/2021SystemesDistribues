@@ -5,8 +5,11 @@
 2. Faire le tutoriel "Services Web SOAP" sur : 
 
 a. L'implémentation d'un service web SOAP (génération de skeleton et de proxy)
+
 b. L'utilisation de SoapUI pour tester un service web SOAP (https://www.soapui.org/downloads/soapui.html)
+
 c. Le développement d'un client Java
+
 d. Le développement d'un client PHP 
 
 
