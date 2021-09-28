@@ -1,7 +1,7 @@
 
 # Travail à faire le mercredi 29 septembre
 
-1. terminer l'exercice n°2 sur la (dé)sérialisation XML/Objet. **Ne pas faire la partie sur Json.**
+1. Terminer l'exercice n°2 sur la (dé)sérialisation XML/Objet. **Ne pas faire la partie sur Json.**
 2. 
 
 # Cours du mardi 28 septembre 
