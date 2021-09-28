@@ -13,7 +13,7 @@ c. Le développement d'un client Java
 d. Le développement d'un client PHP 
 
 
-# Cours du mardi 28 septembre 
+# Cours du mardi 28 septembre (pas abordé)
 
 
 ## Mise en place de l'environnement de développement
