@@ -6,7 +6,12 @@
 # Cours du mardi 28 septembre 
 
 
-Pour que Maven génère un war au lieu d'un jar, on ajoute les deux plugings suivants, dans bien sûr le pom.xml.  
+## Mise en place de l'environnement de développement
+
+Pour réaliser les manipulations suivantes, vous aurez besoin d'un IDE et d'un serveur d'application. Pour l'IDE, j'utilise Intellij (libre à vous d'utiliser votre IDE préféré). Pour le déploiement d'un service web, j'utilise le serveur d'application Glassfish.  La version de Java que j'utilise est la version 8. Attention : l'utilisation d'une version ultérieur ne permet de reproduire les manipulation suivante, car elle intègre pas les utilitaires, entre autre, de génération ni de **stub** (proxy) ni de **skeleton** (voir plus loin, bien saisir l'objectif de ces deux artefacts). 
+
+
+Pour que Maven génère un war au lieu d'un jar (**attention : on peut générer un war sans ajouter ces deux plugings mais le service sera inaccessible**), on ajoute les deux plugings suivants, dans bien sûr le pom.xml 😁.  
 
 ```xml 
 <plugin>
@@ -28,7 +33,19 @@ Pour que Maven génère un war au lieu d'un jar, on ajoute les deux plugings sui
 ```
 
 
-Il existe deux approches pour développer un service web SOAP : (i) l'approche Bottomp-up et (ii) l'approche top-down. La première approche consiste à définir d'abord les méthodes (opérations) du service en question et puis générer son fichier de description wsdl (wWeb Service Description Language). C'est la méthode la plus intuitive. La génération du fichier de description du service se fait l'aide de l'utilitaire ``wsgen``.  La deuxième approche consiste à définir d'abord  le contrat du service. 
+Il existe deux approches pour développer un service web SOAP : (i) l'approche Bottomp-up et (ii) l'approche top-down. La première approche consiste à définir d'abord les méthodes (opérations) du service en question et puis générer son fichier de description wsdl (Web Service Description Language). C'est la méthode la plus intuitive. La génération du fichier de description du service se fait l'aide de l'utilitaire ``wsgen``.  La deuxième approche consiste à définir d'abord  le contrat du service. 
+
+###  Définition d'un service web SOAP avec l'approche bottomp-up
+
+Commençons d'abord par générer un projet web, en utilisant Maven. Choisissez l'archetype ``org.apache.maven.archetype:maven-archetype-webapp``. Soit demoSoap, ``l'ArtifactId`` de ce projet et ``fr.polytech`` son  ``GroupId``.  Une fois le projet généré , supprimer le fichier de configuration ``web.xml``qui se trouve dans ``webapp/WEB-INF``. Ajouter le sous-répertoire ``main/java`` et préciser que vos code sources sont sauvegardés dans répertoire. Cliquer sur ``Project structure``. Définir le répertoire ``java``comme ressources, comme illustré par les deux figures suivantes. 
+
+
+
+![](figures/fig1.PNG)
+
+![figures/fig2.PNG](figures/fig2.PNG)
+
+
 
 
 Un exemple d'un service web (``testsoap``), exposant une seule méthode appelée ``affichageBonjour``, prenant en paramètre une chaîne de caractère, est donné par le code suivant. 
