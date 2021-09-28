@@ -1,8 +1,13 @@
 
 # Travail à faire le mercredi 29 septembre
-
+**Important : ce travail doit être déposé dans votre GIT personnel et pas celui du projet.**
 1. Terminer l'exercice n°2 sur la (dé)sérialisation XML/Objet. **Ne pas faire la partie sur Json.**
-2. 
+2. Faire le tutoriel "Services Web SOAP" sur : 
+a. L'implémentation d'un service web SOAP (génération de skeleton et de proxy)
+b. L'utilisation de SoapUI pour tester un service web SOAP (https://www.soapui.org/downloads/soapui.html)
+c. Le développement d'un client Java
+d. Le développement d'un client PHP 
+
 
 # Cours du mardi 28 septembre 
 
