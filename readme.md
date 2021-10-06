@@ -12,6 +12,8 @@ c. Le développement d'un client Java
 
 d. Le développement d'un client PHP 
 
+3. Apréhender le framework Hibernate et l'utilisation des annotations JPA. A la fin de la séance avoir un descriptif sur une page maximum sur votre cas d'application. 
+
 
 # Cours du mardi 28 septembre (pas abordé)
 
