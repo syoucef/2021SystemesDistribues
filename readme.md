@@ -1,3 +1,24 @@
+# Cours du vendredi 8 octobre 
+#### Configuration de Jaxws et Jersey
+
+``java
+@Configuration
+public class Maconfig {
+    @Bean
+public ResourceConfig maconfiguration(){
+    ResourceConfig resourceConfig = new ResourceConfig();
+    resourceConfig.register(ApiJaxrs.class);
+    return resourceConfig;
+}
+
+@Bean
+SimpleJaxWsServiceExporter simpleJaxWsServiceExporter(){
+        SimpleJaxWsServiceExporter exporter = new SimpleJaxWsServiceExporter();
+        exporter.setBaseAddress("http://0.0.0.0:8981/");
+        return exporter;
+}
+}
+``
 
 # Travail à faire le mercredi 29 septembre
 **Important : ce travail doit être déposé dans votre GIT personnel et pas celui du projet.**
