@@ -18,7 +18,7 @@ SimpleJaxWsServiceExporter simpleJaxWsServiceExporter(){
         return exporter;
 }
 }
-``
+```
 
 # Travail à faire le mercredi 29 septembre
 **Important : ce travail doit être déposé dans votre GIT personnel et pas celui du projet.**
