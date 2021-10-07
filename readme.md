@@ -1,7 +1,7 @@
 # Cours du vendredi 8 octobre 
 #### Configuration de Jaxws et Jersey
 
-``java
+```java
 @Configuration
 public class Maconfig {
     @Bean
