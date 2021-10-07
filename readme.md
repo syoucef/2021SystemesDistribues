@@ -20,6 +20,33 @@ SimpleJaxWsServiceExporter simpleJaxWsServiceExporter(){
 }
 ```
 
+
+#### API rest 
+
+```java 
+
+@Component
+@Path("/produit")
+public class ApiJaxrs {
+    @Autowired
+    private ProduitInterface produitInterface;
+
+    @Path("/produits")
+    @GET
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    public List<Produit> produitList(){
+     return produitInterface.findAll();
+    }
+
+    @Path("/produitsxml")
+    @GET
+    @Produces({MediaType.APPLICATION_XML})
+    public List<Produit> produitListxml(){
+        return produitInterface.findAll();
+    }
+}
+```
+
 # Travail à faire le mercredi 29 septembre
 **Important : ce travail doit être déposé dans votre GIT personnel et pas celui du projet.**
 1. Terminer l'exercice n°2 sur la (dé)sérialisation XML/Objet. **Ne pas faire la partie sur Json.**
