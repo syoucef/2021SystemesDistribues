@@ -24,25 +24,67 @@ SimpleJaxWsServiceExporter simpleJaxWsServiceExporter(){
 #### API rest 
 
 ```java 
+package fr.polytech.democm8octobre.demo.web;
+
+import fr.polytech.democm8octobre.demo.dao.Produit;
+import fr.polytech.democm8octobre.demo.dao.ProduitInterface;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
-@Path("/produit")
-public class ApiJaxrs {
+@Path("/commerce")
+public class ProduitControlleur {
+    // injection des dépendances et inversion de contrôle
+
     @Autowired
     private ProduitInterface produitInterface;
 
     @Path("/produits")
-    @GET
-    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-    public List<Produit> produitList(){
-     return produitInterface.findAll();
+    @GET // c'est le verbe ....
+    // la méthode c'est le ressource ....
+    @Produces({MediaType.APPLICATION_JSON})
+    public ArrayList<Produit> produitList(){
+        return (ArrayList<Produit>) produitInterface.findAll();
     }
 
-    @Path("/produitsxml")
+    @Path("/produits/{identifiant}")
     @GET
-    @Produces({MediaType.APPLICATION_XML})
-    public List<Produit> produitListxml(){
-        return produitInterface.findAll();
+    @Produces({MediaType.APPLICATION_JSON})
+    public Produit getProduit(@PathParam(value = "identifiant") int identifiant){
+        return produitInterface.findById(identifiant).get();
+    }
+
+
+    // ajouter un produit ....
+    @Path("/produits")
+    @POST
+    @Produces({MediaType.APPLICATION_JSON})
+    public Produit save(Produit produit){
+        return produitInterface.save(produit);
+    }
+
+
+    // Mise à jour ....
+    @Path("/produits/{identifiant}")
+    @PUT
+    @Produces({MediaType.APPLICATION_JSON})
+    public Produit save(Produit produit, @PathParam("identifiant") int identifiant){
+        produit.setIdentifiant(identifiant);
+        return produitInterface.save(produit);
+    }
+
+    // Suppression d'un produit ....
+    @Path("/produits/{identifiant}")
+    @DELETE
+    @Produces({MediaType.APPLICATION_JSON})
+    public void save(@PathParam("identifiant") int identifiant){
+        produitInterface.deleteById(identifiant);
     }
 }
 ```
