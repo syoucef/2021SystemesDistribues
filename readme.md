@@ -9,7 +9,7 @@
 #spring.datasource.url=jdbc:h2:mem:produits
 #spring.h2.console.enabled=true
 
-spring.datasource.url=jdbc:mysql://localhost:8889/produits
+spring.datasource.url=jdbc:mysql://localhost:8889/produits  ou ``spring.datasource.url=jdbc:mysql://localhost:8889/produits?serverTimezone=UTC
 spring.datasource.username=root
 spring.datasource.password=root
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
