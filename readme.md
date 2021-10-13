@@ -1,3 +1,18 @@
+# Cours du lundi 18 octobre 
+#### Utilisation de MySQL au lieu de H2
+
+```java 
+#spring.datasource.url=jdbc:h2:mem:produits
+#spring.h2.console.enabled=true
+
+spring.datasource.url=jdbc:mysql://localhost:8889/produits
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=create
+```
+
+
 # Cours du vendredi 8 octobre 
 #### Configuration de Jaxws et Jersey
 
