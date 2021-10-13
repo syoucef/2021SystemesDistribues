@@ -1,3 +1,7 @@
+# Travail à faire le mercredi 20 octobre
+
+
+
 # Cours du lundi 18 octobre 
 #### Utilisation de MySQL au lieu de H2
 
