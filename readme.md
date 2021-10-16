@@ -116,8 +116,6 @@ public class ProduitControlleur {
 
 #### Service web SOAP (Simple Object Access Protocol)
 
-```
-
 
 
 # Travail à faire le mercredi 29 septembre
