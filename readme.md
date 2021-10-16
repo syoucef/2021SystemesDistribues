@@ -6,7 +6,8 @@
 #### Utilisation de MySQL au lieu de H2
 
 ```java 
-#Utulisation d'une base de données "en mémoire" H2 (le données sont sauvegardé dans la mémoire vive, RAM – Random Access Memory)
+#Utulisation d'une base de données "en mémoire" H2 (le données sont sauvegardé dans la mémoire vive, 
+#RAM – Random Access Memory)
 #spring.datasource.url=jdbc:h2:mem:produits
 #spring.h2.console.enabled=true
 
