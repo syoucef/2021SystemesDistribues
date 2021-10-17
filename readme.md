@@ -41,6 +41,22 @@ http://localhost:8989/mesapi/produits?sort=prix,desc
 
 Consulter le lien : https://spring.io/projects/spring-data-rest
 
+##### Renvoyer la valeur de la clé primaire : 
+
+```java
+
+    @Bean
+    CommandLineRunner runner(ProduitInterface produitInterface, RepositoryRestConfiguration configuration){
+        return args -> {
+            configuration.exposeIdsFor(Produit.class);
+            produitInterface.save(new Produit(1, "Tablette", 1400, ProduitType.INFORMATIQUE));
+            produitInterface.save(new Produit(2, "Switch", 140, ProduitType.AUTRE));
+            produitInterface.save(new Produit(3, "Routeur", 400));
+            produitInterface.save(new Produit(4, "Ordinateur", 44));
+        };
+    }
+```
+
 
 
 # Cours du vendredi 8 octobre 
