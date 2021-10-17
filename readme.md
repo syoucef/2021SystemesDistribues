@@ -57,7 +57,8 @@ Consulter le lien : https://spring.io/projects/spring-data-rest
     }
 ```
 
-#### Projection avec Spring 
+#### Projection avec Spring Rest
+
 
 
 #### graphql 
