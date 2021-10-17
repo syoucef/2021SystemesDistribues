@@ -27,7 +27,7 @@ spring.jpa.hibernate.ddl-auto=create
 
 ```java
 @RepositoryRestResource
-public interface ProduitInterface extends JpaRepository<Produit, Integer> {}
+public interface ProduitInterface extends JpaRepository<Produit, Integer> {} 
 ```
 
 # Cours du vendredi 8 octobre 
