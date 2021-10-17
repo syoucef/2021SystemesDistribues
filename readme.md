@@ -30,6 +30,8 @@ spring.jpa.hibernate.ddl-auto=create
 public interface ProduitInterface extends JpaRepository<Produit, Integer> {} 
 ```
 
+Pour changer le chemin d'accès aux resources : ``spring.data.rest.base-path=/mesapi``
+
 # Cours du vendredi 8 octobre 
 #### Configuration de Jaxws et Jersey
 
