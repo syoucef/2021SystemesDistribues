@@ -39,6 +39,9 @@ http://localhost:8989/mesapi/produits?page=0&size=1
 
 http://localhost:8989/mesapi/produits?sort=prix,desc
 
+Consulter le lien : https://spring.io/projects/spring-data-rest
+
+
 
 # Cours du vendredi 8 octobre 
 #### Configuration de Jaxws et Jersey
