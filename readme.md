@@ -60,6 +60,10 @@ Consulter le lien : https://spring.io/projects/spring-data-rest
 #### Projection avec Spring 
 
 
+#### graphql 
+
+https://graphql.org
+
 # Cours du vendredi 8 octobre 
 #### Configuration de Jaxws et Jersey
 
