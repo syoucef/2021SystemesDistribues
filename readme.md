@@ -35,7 +35,7 @@ Pour changer le chemin d'accès aux resources : ``spring.data.rest.base-path=/me
 
 ### Quelques exemples ("extension de l'interface ProduitInterface")
 
-
+``http://localhost:8989/mesapi/produits?page=0&size=1
 
 
 # Cours du vendredi 8 octobre 
