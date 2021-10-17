@@ -59,6 +59,14 @@ Consulter le lien : https://spring.io/projects/spring-data-rest
 
 #### Projection avec Spring Rest
 
+Remarque : les projections doivent être définies dans le même répertoire que les "entities"
+
+```java 
+@Projection(name = "designation", types = Produit.class)
+public interface Projection1 {
+    public String getDesignation();
+}
+```
 
 
 #### graphql 
