@@ -23,7 +23,7 @@ spring.jpa.hibernate.ddl-auto=create
 ```
 
 
-### Utilisation de RepositoryRestResource
+### Utilisation de Spring Data Rest (RepositoryRestResource)
 
 ```java
 @RepositoryRestResource
