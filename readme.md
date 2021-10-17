@@ -68,6 +68,13 @@ public interface Projection1 {
 }
 ```
 
+```java
+@Projection(name = "designationprix", types = Produit.class)
+public interface Projection2 {
+    public String getDesignation();
+    public double getPrix();
+}
+```
 
 #### graphql 
 
