@@ -6,7 +6,7 @@
 
 # Appréhender le framework Hibernate (annotation JPA)
 
-# Déterminer le choix du langage et/ou framework à utiliser pour la partie back-end
+# Déterminer le choix du langage et/ou framework à utiliser pour la partie front-end
 
 
 
