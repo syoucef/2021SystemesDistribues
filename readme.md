@@ -52,6 +52,20 @@ http://localhost:8989/mesapi/produits?page=0&size=1
 
 http://localhost:8989/mesapi/produits?sort=prix,desc
 
+
+```java 
+@RepositoryRestResource
+public interface ProduitInterface  extends JpaRepository<Produit, Integer> {
+    public List<Produit> findByProduitType(ProduitType type);
+    public List<Produit> findByPrixGreaterThan(double prix);
+    public List<Produit> findByPrixLessThan(double prix);
+}
+```
+
+
+http://localhost:8989/mesapi/produits/search/findByPrixLessThan?prix=445
+
+
 Consulter le lien : https://spring.io/projects/spring-data-rest
 
 ##### Renvoyer la valeur de la clé primaire : 
