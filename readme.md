@@ -80,6 +80,10 @@ public interface Projection1 {
     public String getDesignation();
 }
 ```
+exemple de l'utilisation de la projection 1
+
+http://localhost:8989/mesapi/produits?projection=designation
+
 
 ```java
 @Projection(name = "designationprix", types = Produit.class)
