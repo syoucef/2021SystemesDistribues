@@ -1,5 +1,14 @@
 # Travail à faire le mercredi 20 octobre
 
+Importante : le mercredi 3 novembre après-midi aura lieu une présentation de 10 minutes par groupe, pour la présentation du cas d'utilisation et de la couche DAO 
+
+# Terminer la description de votre cas d'application + diagrames UML 
+
+# Appréhender le framework Hibernate (annotation JPA)
+
+# Déterminer le choix du langage et/ou framework à utiliser pour la partie back-end
+
+
 
 #### Lombok 
 
