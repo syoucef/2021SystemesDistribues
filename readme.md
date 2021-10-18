@@ -1,6 +1,6 @@
 # Travail à faire le mercredi 20 octobre
 
-Importante : le mercredi 3 novembre après-midi aura lieu une présentation de 15 minutes maximu par groupe, pour la présentation du cas d'utilisation et de la couche DAO 
+# Importante : le mercredi 3 novembre après-midi aura lieu une présentation de 15 minutes maximu par groupe, pour la présentation du cas d'utilisation et de la couche DAO 
 
 # Terminer la description de votre cas d'application + diagrames UML 
 
