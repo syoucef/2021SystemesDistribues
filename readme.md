@@ -1,6 +1,19 @@
 # Travail à faire le mercredi 20 octobre
 
 
+#### Lombok 
+
+```java
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.22</version>
+    <scope>provided</scope>
+</dependency>
+
+
+
 
 # Cours du lundi 18 octobre 
 #### Utilisation de MySQL au lieu de H2
