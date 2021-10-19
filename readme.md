@@ -1,14 +1,15 @@
 # Travail à faire le mercredi 20 octobre
 
-<span style="color:blue">
-## Importante : le mercredi 3 novembre après-midi aura lieu une présentation de 15 minutes maximum par groupe, pour la présentation du cas d'utilisation et de la couche DAO et du choix des langages (ou framework) à utiliser côté client
+
+ 
+## <span style="color:blue"> Importante : le mercredi 3 novembre après-midi aura lieu une présentation de 15 minutes maximum par groupe, pour la présentation du cas d'utilisation et de la couche DAO et du choix des langages (ou framework) à utiliser côté client. </span> 
 
 # Terminer la description de votre cas d'application + diagrames UML 
 
 # Appréhender le framework Hibernate (annotation JPA, en implémentant les différentes associations de votre cas d'application)
 
 # Déterminer le choix du langage et/ou framework à utiliser pour la partie front-end
- </span>
+ 
     
 
 
