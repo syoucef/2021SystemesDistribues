@@ -6,7 +6,7 @@
 
 # Terminer la description de votre cas d'application + diagrames UML 
 
-# Appréhender le framework Hibernate (annotation JPA, en implémentant les différentes associations de votre cas d'application)
+# Appréhender le framework Hibernate (annotations JPA, en implémentant les différentes associations de votre cas d'application)
 
 # Déterminer le choix du langage et/ou framework à utiliser pour la partie front-end
  
