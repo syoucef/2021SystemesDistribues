@@ -1,3 +1,29 @@
+
+# Brève introduction à Docker 
+
+docker run image_name : permet de créer un conteneur de l'image mage_name
+
+docker run -d image_name : permet de démarrer un conteneur en service de fond
+
+la valeur par défaut de la version de l'image est ``latest``
+
+docker run image_name:tag
+
+exemples : 
+doicker run image_name:3.0 (ici on précise la version à utiliser et si cette version n'est pas précisée, la valeur par défaut est latest)
+
+
+docker ps : permet de lister tous les conteneur en cours d'eéxution 
+
+chaqsue conteneur dispose d'un identifiant unique 
+
+docker ps -a 
+
+
+
+docker run --name my-sql -e MYSQL_ROOT_PASSWORD=root -d mysql
+
+
 # API rest avec RestController
 
 
