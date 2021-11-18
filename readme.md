@@ -25,6 +25,8 @@ EXPOSE 80
 
 ``docker build -t cm18novembre .``
 
+``docker run -d -p 9194:80 cm18novembre`
+
 
 
 # Brève introduction à Docker 
