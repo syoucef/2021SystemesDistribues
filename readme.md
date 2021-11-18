@@ -16,6 +16,12 @@ Inspecter un conteneur : ``docker inspect``
 Voir les logs ``docker logs
 
 
+```java 
+FROM nginx
+COPY index.html /usr/share/nginx/html
+EXPOSE 80
+```
+
 
 
 # Brève introduction à Docker 
