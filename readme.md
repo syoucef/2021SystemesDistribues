@@ -1,4 +1,23 @@
 
+# Suite Docker
+
+docker run -d nginx
+
+docker run -d -p 9999:80 nginx 
+
+docker run --name my-sql -e MYSQL_ROOT_PASSWORD=root -d mysql
+
+docker exec -it  my-sql mysql --password
+
+Montrer l'image alpine et quelques commandes ....
+
+Inspecter un conteneur : ``docker inspect``
+
+Voir les logs ``docker logs
+
+
+
+
 # Brève introduction à Docker 
 
 docker run image_name : permet de créer un conteneur de l'image mage_name
@@ -13,15 +32,15 @@ exemples :
 doicker run image_name:3.0 (ici on précise la version à utiliser et si cette version n'est pas précisée, la valeur par défaut est latest)
 
 
-docker ps : permet de lister tous les conteneur en cours d'eéxution 
+docker ps : permet de lister tous les conteneurs en cours d'eéxution 
 
 chaqsue conteneur dispose d'un identifiant unique 
 
 docker ps -a 
 
-
-
 docker run --name my-sql -e MYSQL_ROOT_PASSWORD=root -d mysql
+
+
 
 
 # API rest avec RestController
