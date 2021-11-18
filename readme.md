@@ -23,6 +23,9 @@ EXPOSE 80
 ```
 
 
+``docker build -t cm18novembre .
+
+
 
 # Brève introduction à Docker 
 
